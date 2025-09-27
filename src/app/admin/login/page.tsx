@@ -15,8 +15,10 @@ import Logo from '@/components/logo';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { auth } from '@/lib/firebase';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { useToast } from '@/hooks/use-toast';
+
+const ADMIN_EMAIL = 'admin@university.edu';
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -29,9 +31,18 @@ export default function AdminLoginPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      // TODO: Add a check to ensure only admin users can log in.
-      await signInWithEmailAndPassword(auth, email, password);
-      router.push('/admin');
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      
+      if (userCredential.user.email === ADMIN_EMAIL) {
+        router.push('/admin');
+      } else {
+        await signOut(auth);
+        toast({
+          title: 'Access Denied',
+          description: 'You are not authorized to access the admin dashboard.',
+          variant: 'destructive',
+        });
+      }
     } catch (error: any) {
       toast({
         title: 'Login Failed',

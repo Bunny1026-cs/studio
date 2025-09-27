@@ -23,7 +23,6 @@ const links = [
   { href: '/dashboard/counselors', label: 'Counselors', icon: Users },
   { href: '/dashboard/resources', label: 'Resources', icon: BookOpen },
   { href: '/dashboard/forum', label: 'Forum', icon: MessageSquare },
-  { href: '/admin', label: 'Admin', icon: Shield },
 ];
 
 export function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElement>) {

@@ -25,7 +25,7 @@ export default function LandingPage() {
               <Link href="/login">Student Portal</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/login">Admin Portal</Link>
+              <Link href="/admin/login">Admin Portal</Link>
             </Button>
           </div>
         </div>

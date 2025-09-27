@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "counselor-1",
+      "description": "Profile picture of Dr. Emily Carter",
+      "imageUrl": "https://images.unsplash.com/photo-1610655507808-a59293f4e332?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODg2Nzc5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "counselor-2",
+      "description": "Profile picture of Dr. Ben Adams",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg4MzA1NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "counselor-3",
+      "description": "Profile picture of Dr. Chloe Davis",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHByb2Zlc3Npb25hbHxlbnwwfHx8fDE3NTg5MjU2NzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman professional"
+    },
+    {
+      "id": "counselor-4",
+      "description": "Profile picture of Dr. Samuel Rodriguez",
+      "imageUrl": "https://images.unsplash.com/photo-1537511446984-935f663eb1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW4lMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzU4ODc1OTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man professional"
+    },
+    {
+      "id": "resource-stress",
+      "description": "Thumbnail for stress management article",
+      "imageUrl": "https://images.unsplash.com/photo-1694274928091-7d533e146597?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYWxtJTIwbmF0dXJlfGVufDB8fHx8MTc1ODg0MDczNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calm nature"
+    },
+    {
+      "id": "resource-anxiety",
+      "description": "Thumbnail for anxiety video",
+      "imageUrl": "https://images.unsplash.com/photo-1646700612143-4fc10907c06c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHNvb3RoaW5nfGVufDB8fHx8MTc1ODk0NTgyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract soothing"
+    },
+    {
+      "id": "resource-mindfulness",
+      "description": "Thumbnail for mindfulness audio",
+      "imageUrl": "https://images.unsplash.com/photo-1533162507191-d90c625b2640?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx6ZW4lMjBzdG9uZXN8ZW58MHx8fHwxNzU4ODkwODQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "zen stones"
+    },
+    {
+      "id": "resource-depression",
+      "description": "Thumbnail for depression article",
+      "imageUrl": "https://images.unsplash.com/photo-1646185600486-5d1942567fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxob3BlJTIwc3VucmlzZXxlbnwwfHx8fDE3NTg5NDU4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hope sunrise"
+    },
+    {
+      "id": "user-avatar",
+      "description": "Generic user avatar",
+      "imageUrl": "https://images.unsplash.com/photo-1757163985334-b831f1652ecc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhYnN0cmFjdCUyMHBlcnNvbnxlbnwwfHx8fDE3NTg5NDU4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract person"
+    }
+  ]
 }

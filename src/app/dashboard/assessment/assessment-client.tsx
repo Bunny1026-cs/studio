@@ -8,8 +8,15 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BarChart, Smile, Meh, Frown } from 'lucide-react';
+import Image from 'next/image';
 
-export default function AssessmentClient() {
+const questions = [
+  { id: 1, text: "How are you feeling today?" },
+  { id: 2, text: "Did you sleep well last night?" },
+  // ...more questions
+];
+
+export default function AssessmentPage() {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
   const [isCompleted, setIsCompleted] = useState(false);
@@ -77,7 +84,10 @@ export default function AssessmentClient() {
       <div className="text-center flex flex-col items-center">
         <feedback.icon className={`h-16 w-16 mb-4 ${feedback.color}`} />
         <h3 className="text-xl font-semibold mb-2">{feedback.title}</h3>
-        <p className="text-muted-foreground mb-6 max-w-md mx-auto">{feedback.message}</p>
+        <p className="text-muted-foreground mb-2 max-w-md mx-auto">{feedback.message}</p>
+        <p className="text-lg font-bold mb-6">
+          Your Assessment Score: <span className="text-primary">{score}</span>
+        </p>
         <div className="flex gap-4">
           <Button onClick={handleRestart}>Take Again</Button>
           <Button variant="outline">Explore Resources</Button>

@@ -15,23 +15,23 @@ export default function LandingPage() {
         
         <div className="bg-background/80 backdrop-blur-sm p-8 rounded-xl max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold text-primary font-headline">
-            Welcome to the Learning Management System
+            Welcome to SYNAPSE
           </h1>
           <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-            A comprehensive platform for students and administrators to manage and track learning progress.
+            A confidential space for students to prioritize their mental well-being.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="/login">Student Login</Link>
+              <Link href="/login">Student Portal</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="/login">Admin Login</Link>
+              <Link href="/login">Admin Portal</Link>
             </Button>
           </div>
         </div>
       </main>
       <footer className="text-center p-4 text-sm text-foreground/60">
-        <p>&copy; {new Date().getFullYear()} LMS. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} SYNAPSE. All rights reserved.</p>
       </footer>
     </div>
   );

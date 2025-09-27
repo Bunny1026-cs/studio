@@ -6,8 +6,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
 export const metadata: Metadata = {
-  title: 'Synapse - Your Mental Wellness Companion',
-  description: 'A platform for students to find mental wellness support.',
+  title: 'LMS - Learning Management System',
+  description: 'A comprehensive platform for modern learning.',
 };
 
 export default function RootLayout({

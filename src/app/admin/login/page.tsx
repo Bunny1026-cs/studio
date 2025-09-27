@@ -18,7 +18,7 @@ import { auth } from '@/lib/firebase';
 import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { useToast } from '@/hooks/use-toast';
 
-const ADMIN_EMAIL = 'admin@university.edu';
+const ADMIN_EMAIL = 'admin@123gmail.com';
 
 export default function AdminLoginPage() {
   const router = useRouter();

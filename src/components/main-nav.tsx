@@ -11,11 +11,14 @@ import {
   BookOpen,
   LayoutGrid,
   Shield,
+  ClipboardCheck,
 } from 'lucide-react';
 
 const links = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutGrid },
   { href: '/dashboard/assessment', label: 'Assessment', icon: HeartPulse },
+  { href: '/dashboard/reassessment', label: 'Reassessment', icon: ClipboardCheck },
+  { href: '/dashboard/courses', label: 'Courses', icon: BookOpen },
   { href: '/dashboard/chat', label: 'AI Chat', icon: MessageSquare },
   { href: '/dashboard/counselors', label: 'Counselors', icon: Users },
   { href: '/dashboard/resources', label: 'Resources', icon: BookOpen },

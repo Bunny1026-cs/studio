@@ -39,6 +39,12 @@ export default function DashboardLayout({
               <Link href="/dashboard/assessment" className="text-muted-foreground hover:text-foreground">
                 Assessment
               </Link>
+              <Link href="/dashboard/reassessment" className="text-muted-foreground hover:text-foreground">
+                Reassessment
+              </Link>
+              <Link href="/dashboard/courses" className="text-muted-foreground hover:text-foreground">
+                Courses
+              </Link>
               <Link href="/dashboard/chat" className="text-muted-foreground hover:text-foreground">
                 AI Chat
               </Link>

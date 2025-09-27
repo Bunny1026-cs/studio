@@ -7,15 +7,29 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, HeartPulse, MessageSquare, Users, BookOpen, MessageSquareIcon } from 'lucide-react';
+import { ArrowRight, HeartPulse, MessageSquare, Users, BookOpen, MessageSquareIcon, ClipboardCheck } from 'lucide-react';
 
 const features = [
   {
-    title: 'Wellness Assessment',
-    description: 'Understand your current state of wellness with a quick assessment.',
+    title: 'Initial Assessment',
+    description: 'New here? Take our initial assessment to get started on your wellness journey.',
     href: '/dashboard/assessment',
     icon: HeartPulse,
     cta: 'Start Assessment',
+  },
+  {
+    title: 'Wellness Courses',
+    description: 'Explore our courses designed to help you manage stress, anxiety, and more.',
+    href: '/dashboard/courses',
+    icon: BookOpen,
+    cta: 'View Courses',
+  },
+  {
+    title: 'Reassessment',
+    description: 'Completed your courses? Take a reassessment to track your progress.',
+    href: '/dashboard/reassessment',
+    icon: ClipboardCheck,
+    cta: 'Take Reassessment',
   },
   {
     title: 'AI Companion Chat',
@@ -30,13 +44,6 @@ const features = [
     href: '/dashboard/counselors',
     icon: Users,
     cta: 'Browse Counselors',
-  },
-  {
-    title: 'Resource Hub',
-    description: 'Explore articles, videos, and audio on mental wellness topics.',
-    href: '/dashboard/resources',
-    icon: BookOpen,
-    cta: 'Explore Resources',
   },
   {
     title: 'Peer Forum',

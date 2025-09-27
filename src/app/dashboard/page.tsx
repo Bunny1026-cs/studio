@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import {
   Card,
@@ -8,28 +10,15 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, HeartPulse, MessageSquare, Users, BookOpen, MessageSquareIcon, ClipboardCheck } from 'lucide-react';
+import { useState } from 'react';
 
-const features = [
-  {
-    title: 'Initial Assessment',
-    description: 'New here? Take our initial assessment to get started on your wellness journey.',
-    href: '/dashboard/assessment',
-    icon: HeartPulse,
-    cta: 'Start Assessment',
-  },
+const baseFeatures = [
   {
     title: 'Wellness Courses',
     description: 'Explore our courses designed to help you manage stress, anxiety, and more.',
     href: '/dashboard/courses',
     icon: BookOpen,
     cta: 'View Courses',
-  },
-  {
-    title: 'Reassessment',
-    description: 'Completed your courses? Take a reassessment to track your progress.',
-    href: '/dashboard/reassessment',
-    icon: ClipboardCheck,
-    cta: 'Take Reassessment',
   },
   {
     title: 'AI Companion Chat',
@@ -54,7 +43,33 @@ const features = [
   },
 ];
 
+const initialAssessmentFeature = {
+  title: 'Initial Assessment',
+  description: 'New here? Take our initial assessment to get started on your wellness journey.',
+  href: '/dashboard/assessment',
+  icon: HeartPulse,
+  cta: 'Start Assessment',
+};
+
+const reassessmentFeature = {
+  title: 'Reassessment',
+  description: 'Completed your courses? Take a reassessment to track your progress.',
+  href: '/dashboard/reassessment',
+  icon: ClipboardCheck,
+  cta: 'Take Reassessment',
+};
+
+
 export default function DashboardPage() {
+  // TODO: Replace with real user data from Firestore
+  // This state will determine if the user has completed the initial assessment.
+  const [isNewUser, setIsNewUser] = useState(true); 
+
+  const features = isNewUser
+    ? [initialAssessmentFeature, ...baseFeatures]
+    : [reassessmentFeature, ...baseFeatures];
+
+
   return (
     <>
       <div className="flex items-center justify-between space-y-2">
